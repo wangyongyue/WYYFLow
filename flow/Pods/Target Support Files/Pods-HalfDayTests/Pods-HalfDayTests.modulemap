@@ -1,0 +1,6 @@
+framework module Pods_HalfDayTests {
+  umbrella header "Pods-HalfDayTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
