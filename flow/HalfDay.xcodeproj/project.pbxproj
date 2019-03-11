@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		188128A32235F5D800D22C11 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188128A22235F5D800D22C11 /* Router.swift */; };
 		456F959F2233FC3300E7B715 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F959E2233FC3300E7B715 /* AppDelegate.swift */; };
 		456F95A12233FC3300E7B715 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F95A02233FC3300E7B715 /* ViewController.swift */; };
 		456F95A42233FC3300E7B715 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456F95A22233FC3300E7B715 /* Main.storyboard */; };
@@ -68,6 +69,7 @@
 
 /* Begin PBXFileReference section */
 		03C75E58B280BB8B47CCEADF /* Pods-HalfDay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HalfDay.release.xcconfig"; path = "Pods/Target Support Files/Pods-HalfDay/Pods-HalfDay.release.xcconfig"; sourceTree = "<group>"; };
+		188128A22235F5D800D22C11 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		456F959B2233FC3300E7B715 /* HalfDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HalfDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		456F959E2233FC3300E7B715 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		456F95A02233FC3300E7B715 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -428,6 +430,7 @@
 		456F962622354EFE00E7B715 /* router */ = {
 			isa = PBXGroup;
 			children = (
+				188128A22235F5D800D22C11 /* Router.swift */,
 			);
 			path = router;
 			sourceTree = "<group>";
@@ -693,6 +696,7 @@
 				456F961F223548DD00E7B715 /* WCollectionCell.swift in Sources */,
 				456F962122354A5E00E7B715 /* BuyCell.swift in Sources */,
 				456F960E223535A800E7B715 /* Collection.swift in Sources */,
+				188128A32235F5D800D22C11 /* Router.swift in Sources */,
 				456F95E42233FFDA00E7B715 /* WCollection.swift in Sources */,
 				456F960C2235359E00E7B715 /* List.swift in Sources */,
 				456F962522354C8B00E7B715 /* Global.swift in Sources */,
