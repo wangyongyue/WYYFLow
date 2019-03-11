@@ -43,14 +43,14 @@ class Router: NSObject {
         
         return controller?.viewControllers.last as! WVC
     }
-    class func params() -> [String:String]?{
+    class func params() -> [String:Any]?{
         
         if let dic = currentController().params{
             return dic
         }
         return nil
     }
-    class func push(_ viewController: UIViewController,_ params:[String:String]?,_ block:popCallBack?){
+    class func push(_ viewController: UIViewController,_ params:[String:Any]?,_ block:popCallBack?){
         
         if viewController is WVC{
             let vc = viewController as! WVC

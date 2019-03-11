@@ -11,7 +11,7 @@ typealias popCallBack = (_ obj:AnyObject?) -> ()
 
 class WVC: UIViewController {
 
-    var params:[String:String]?
+    var params:[String:Any]?
     var call:popCallBack?
     override func viewDidLoad() {
         super.viewDidLoad()

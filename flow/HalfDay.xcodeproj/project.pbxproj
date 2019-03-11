@@ -48,6 +48,9 @@
 		456F962122354A5E00E7B715 /* BuyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F962022354A5E00E7B715 /* BuyCell.swift */; };
 		456F962322354A6900E7B715 /* CheckCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F962222354A6900E7B715 /* CheckCell.swift */; };
 		456F962522354C8B00E7B715 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F962422354C8B00E7B715 /* Global.swift */; };
+		456F96292236A14600E7B715 /* ChooseDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F96282236A14600E7B715 /* ChooseDetailsVC.swift */; };
+		456F962B2236A16000E7B715 /* ChooseDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F962A2236A16000E7B715 /* ChooseDetails.swift */; };
+		456F962D2236A16E00E7B715 /* ChooseDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F962C2236A16E00E7B715 /* ChooseDetailsCell.swift */; };
 		BDA2408B9D87B487735D07CD /* Pods_HalfDayTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D7AAB9B57D175CCB4396EA8 /* Pods_HalfDayTests.framework */; };
 		DEA1C64D083D038C31D12799 /* Pods_HalfDayUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 945FB3904AC363044DA2E175 /* Pods_HalfDayUITests.framework */; };
 		FEA338BF6BE25CF2FF24B540 /* Pods_HalfDay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4962E15038FAB02C35D8C5F3 /* Pods_HalfDay.framework */; };
@@ -119,6 +122,9 @@
 		456F962022354A5E00E7B715 /* BuyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuyCell.swift; sourceTree = "<group>"; };
 		456F962222354A6900E7B715 /* CheckCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckCell.swift; sourceTree = "<group>"; };
 		456F962422354C8B00E7B715 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		456F96282236A14600E7B715 /* ChooseDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseDetailsVC.swift; sourceTree = "<group>"; };
+		456F962A2236A16000E7B715 /* ChooseDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseDetails.swift; sourceTree = "<group>"; };
+		456F962C2236A16E00E7B715 /* ChooseDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChooseDetailsCell.swift; sourceTree = "<group>"; };
 		4962E15038FAB02C35D8C5F3 /* Pods_HalfDay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HalfDay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		68296A971F4AFA6FED5583C1 /* Pods-HalfDayUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HalfDayUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HalfDayUITests/Pods-HalfDayUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		6EE8083AD5B33B4377754B86 /* Pods-HalfDayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HalfDayTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HalfDayTests/Pods-HalfDayTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -370,6 +376,7 @@
 				456F95F72235202500E7B715 /* ChooseVC.swift */,
 				456F9611223539B400E7B715 /* Choose.swift */,
 				456F961922353CAB00E7B715 /* ChooseCell.swift */,
+				456F96272236A12300E7B715 /* ChooseDetail */,
 			);
 			path = Choose;
 			sourceTree = "<group>";
@@ -442,6 +449,16 @@
 				188128A22235F5D800D22C11 /* Router.swift */,
 			);
 			path = router;
+			sourceTree = "<group>";
+		};
+		456F96272236A12300E7B715 /* ChooseDetail */ = {
+			isa = PBXGroup;
+			children = (
+				456F96282236A14600E7B715 /* ChooseDetailsVC.swift */,
+				456F962A2236A16000E7B715 /* ChooseDetails.swift */,
+				456F962C2236A16E00E7B715 /* ChooseDetailsCell.swift */,
+			);
+			path = ChooseDetail;
 			sourceTree = "<group>";
 		};
 		62665BE33F625338636EE41D /* Frameworks */ = {
@@ -705,6 +722,9 @@
 				456F959F2233FC3300E7B715 /* AppDelegate.swift in Sources */,
 				456F961D2235406E00E7B715 /* WCell.swift in Sources */,
 				456F95F1223400A100E7B715 /* Main.swift in Sources */,
+				456F96292236A14600E7B715 /* ChooseDetailsVC.swift in Sources */,
+				456F962B2236A16000E7B715 /* ChooseDetails.swift in Sources */,
+				456F962D2236A16E00E7B715 /* ChooseDetailsCell.swift in Sources */,
 				456F961F223548DD00E7B715 /* WCollectionCell.swift in Sources */,
 				456F962122354A5E00E7B715 /* BuyCell.swift in Sources */,
 				456F960E223535A800E7B715 /* Collection.swift in Sources */,

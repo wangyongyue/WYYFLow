@@ -1,41 +1,37 @@
 //
-//  Choose.swift
+//  ChooseDetailsVC.swift
 //  HalfDay
 //
-//  Created by wangyongyue on 2019/3/10.
+//  Created by wangyongyue on 2019/3/11.
 //  Copyright © 2019 wangyongyue. All rights reserved.
 //
 
 import UIKit
 
-class ChooseVC: WVC {
-
+class ChooseDetailsVC: WVC {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         
+        // Do any additional setup after loading the view.
+        self.title = "详情"
         let vm = VM()
-        let m = Choose(vm)
+        let m = ChooseDetails(vm)
         let v = List(vm)
         self.view.addSubview(v)
         v.snp.makeConstraints { (make) in
             make.left.right.equalTo(0)
             make.top.equalTo(layout.top())
-            make.bottom.equalTo(layout.bottom())
-
+            make.bottom.equalTo(0)
+            
         }
-        v.table.register(ChooseCell.classForCoder())
+        v.table.register(ChooseDetailsCell.classForCoder())
         v.table.didSelect { (index) in
             
-            print(index)
-            Router.push(ChooseDetailsVC(), ["id":10], nil)
+            print(Router.params())
             
         }
         m.loadData()
     }
     
-
-    
-
 }
