@@ -20,18 +20,24 @@ class Collection: WView {
         table.snp.makeConstraints { (make) in
             make.left.top.right.bottom.equalTo(0)
         }
+        
+    }
+    init(_ avm:VM) {
+        self.init()
+        vm = avm
         vm?.callBack({[weak self] in
             if let arr = self?.vm?.array{
                 self?.table.reload(arr)
             }
         })
     }
-    init(_ avm:VM) {
-        self.init()
-        vm = avm
-    }
     func bindVM(_ avm:VM){
         vm = avm
+        vm?.callBack({[weak self] in
+            if let arr = self?.vm?.array{
+                self?.table.reload(arr)
+            }
+        })
     }
     
     required init?(coder aDecoder: NSCoder) {

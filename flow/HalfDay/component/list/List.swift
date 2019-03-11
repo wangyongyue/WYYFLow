@@ -21,9 +21,7 @@ class List: WView {
             make.top.left.right.bottom.equalTo(0)
 
         }
-       
         
-    
         
     }
     
@@ -42,8 +40,7 @@ class List: WView {
         vm = avm
         vm?.callBack({[weak self]  in
             if let arr = self?.vm?.array{
-                self?.table.array = arr
-                self?.table.reloadData()
+                self?.table.reload(arr)
             }
         })
     }

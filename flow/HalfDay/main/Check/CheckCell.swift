@@ -24,6 +24,8 @@ class CheckCell: WCell {
     }
     
     override func setModel(_ aModel:WModel){
+        super.setModel(aModel)
+
         if aModel is CheckModel{
             let a = aModel as! CheckModel
             label.text = a.name

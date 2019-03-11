@@ -19,10 +19,30 @@ class WButton: UIButton {
         
         addTarget()
     }
+    init(_ title:String) {
+        self.init()
+        self.setTitle(title, for: .normal)
+        self.setTitleColor(UIColor.black, for: .normal)
+        self.setTitleColor(UIColor.black, for: .highlighted)
+
+    }
+    init(_ img:UIImage) {
+        self.init()
+        self.setImage(img, for: .normal)
+        self.setImage(img, for: .highlighted)
+        
+    }
+    func clickEvent(_ callBack:@escaping clickBlock){
+        
+        block = callBack
+
+    }
+    
     init(_ title:String,_ callBack:@escaping clickBlock) {
         self.init()
         self.setTitle(title, for: .normal)
-        self.setTitle(title, for: .highlighted)
+        self.setTitleColor(UIColor.black, for: .normal)
+        self.setTitleColor(UIColor.black, for: .highlighted)
         block = callBack
     }
     init(_ img:UIImage,_ callBack:@escaping clickBlock) {
@@ -32,6 +52,7 @@ class WButton: UIButton {
         block = callBack
 
     }
+    
     
     func addTarget(){
         

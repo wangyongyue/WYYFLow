@@ -17,7 +17,6 @@ class WTable: UITableView,UITableViewDataSource,UITableViewDelegate{
     override init(frame: CGRect, style: UITableView.Style) {
         super.init(frame: frame, style: style)
         
-        
         self.backgroundColor = UIColor.clear
         self.delegate = self
         self.dataSource = self

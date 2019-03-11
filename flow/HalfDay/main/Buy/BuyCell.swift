@@ -23,6 +23,8 @@ class BuyCell: WCell {
     }
     
     override func setModel(_ aModel:WModel){
+        super.setModel(aModel)
+
         if aModel is BuyModel{
             let a = aModel as! BuyModel
             label.text = a.name

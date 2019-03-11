@@ -51,10 +51,11 @@ class WTabBar: UITabBarController {
             vc.tabBarItem.image = nil
             vc.tabBarItem.selectedImage = nil
         }
-        
         return vc
       
     }
     
 
 }
+
+

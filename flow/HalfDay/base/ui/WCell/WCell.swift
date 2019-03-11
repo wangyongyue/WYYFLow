@@ -10,6 +10,7 @@ import UIKit
 
 class WCell: UITableViewCell {
 
+    var model:WModel?
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -28,7 +29,7 @@ class WCell: UITableViewCell {
         
     }
 
-    func setModel(_ aModel:WModel){}
+    func setModel(_ aModel:WModel){ self.model = aModel}
     
        
 }

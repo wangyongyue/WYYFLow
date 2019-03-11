@@ -19,11 +19,17 @@ class ChooseVC: WVC {
         let m = Choose(vm)
         let v = List(vm)
         self.view.addSubview(v)
-        v.frame = self.view.bounds
+        v.snp.makeConstraints { (make) in
+            make.left.right.equalTo(0)
+            make.top.equalTo(layout.top())
+            make.bottom.equalTo(layout.bottom())
+
+        }
         v.table.register(ChooseCell.classForCoder())
         v.table.didSelect { (index) in
             
             print(index)
+            
         }
         m.loadData()
     }

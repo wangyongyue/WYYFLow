@@ -22,5 +22,5 @@ class WDeaL: NSObject {
         
         vm = avm
     }
-
+    
 }

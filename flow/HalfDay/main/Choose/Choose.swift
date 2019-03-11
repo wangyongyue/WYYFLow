@@ -8,7 +8,7 @@
 
 import UIKit
 
-class Choose: WDeaL {
+class Choose: WDeaL,WModelDelegate {
     
     func loadData(){
         
@@ -16,12 +16,20 @@ class Choose: WDeaL {
         for i in 1...6{
             
             let m = ChooseModel()
-            m.name = "文身断发记录数"
+            m.name = "文身断发记录数\(i)"
+            m.delegate = self
             arr.append(m)
         }
         
         self.vm?.array = arr
         
+        
+    }
+    func eventClick(_ eventName: String, _ model: WModel) {
+        
+        let m = model as! ChooseModel
+        print(eventName + m.name!)
+
         
     }
 

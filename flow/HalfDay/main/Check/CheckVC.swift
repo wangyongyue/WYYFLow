@@ -19,7 +19,11 @@ class CheckVC: WVC {
         let m = Check(vm)
         let v = List(vm)
         self.view.addSubview(v)
-        v.frame = self.view.bounds
+        v.snp.makeConstraints { (make) in
+            make.left.right.equalTo(0)
+            make.top.equalTo(layout.top())
+            make.bottom.equalTo(layout.bottom())
+        }
         v.table.register(CheckCell.classForCoder())
         v.table.didSelect { (index) in
             

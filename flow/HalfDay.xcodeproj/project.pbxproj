@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		188128A32235F5D800D22C11 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188128A22235F5D800D22C11 /* Router.swift */; };
+		188128A7223604D100D22C11 /* Img.swift in Sources */ = {isa = PBXBuildFile; fileRef = 188128A6223604D100D22C11 /* Img.swift */; };
+		188128AA2236057900D22C11 /* back@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 188128A82236057900D22C11 /* back@3x.png */; };
+		188128AB2236057900D22C11 /* back@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 188128A92236057900D22C11 /* back@2x.png */; };
 		456F959F2233FC3300E7B715 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F959E2233FC3300E7B715 /* AppDelegate.swift */; };
 		456F95A12233FC3300E7B715 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 456F95A02233FC3300E7B715 /* ViewController.swift */; };
 		456F95A42233FC3300E7B715 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 456F95A22233FC3300E7B715 /* Main.storyboard */; };
@@ -70,6 +73,9 @@
 /* Begin PBXFileReference section */
 		03C75E58B280BB8B47CCEADF /* Pods-HalfDay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HalfDay.release.xcconfig"; path = "Pods/Target Support Files/Pods-HalfDay/Pods-HalfDay.release.xcconfig"; sourceTree = "<group>"; };
 		188128A22235F5D800D22C11 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		188128A6223604D100D22C11 /* Img.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Img.swift; sourceTree = "<group>"; };
+		188128A82236057900D22C11 /* back@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@3x.png"; sourceTree = "<group>"; };
+		188128A92236057900D22C11 /* back@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back@2x.png"; sourceTree = "<group>"; };
 		456F959B2233FC3300E7B715 /* HalfDay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HalfDay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		456F959E2233FC3300E7B715 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		456F95A02233FC3300E7B715 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -212,6 +218,8 @@
 		456F95CE2233FE3400E7B715 /* images */ = {
 			isa = PBXGroup;
 			children = (
+				188128A92236057900D22C11 /* back@2x.png */,
+				188128A82236057900D22C11 /* back@3x.png */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -377,8 +385,8 @@
 		456F9600223525A900E7B715 /* obj */ = {
 			isa = PBXGroup;
 			children = (
-				456F9601223525BA00E7B715 /* WModel.swift */,
 				456F962422354C8B00E7B715 /* Global.swift */,
+				188128A6223604D100D22C11 /* Img.swift */,
 			);
 			path = obj;
 			sourceTree = "<group>";
@@ -388,6 +396,7 @@
 			children = (
 				456F960F223535C600E7B715 /* VM.swift */,
 				456F961722353A0500E7B715 /* WDeaL.swift */,
+				456F9601223525BA00E7B715 /* WModel.swift */,
 				456F96072235352800E7B715 /* collection */,
 				456F96062235351B00E7B715 /* list */,
 			);
@@ -568,6 +577,8 @@
 			files = (
 				456F95A92233FC3500E7B715 /* LaunchScreen.storyboard in Resources */,
 				456F95A62233FC3500E7B715 /* Assets.xcassets in Resources */,
+				188128AB2236057900D22C11 /* back@2x.png in Resources */,
+				188128AA2236057900D22C11 /* back@3x.png in Resources */,
 				456F95A42233FC3300E7B715 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -683,6 +694,7 @@
 				456F95FA2235202D00E7B715 /* BuyVC.swift in Sources */,
 				456F95E72233FFF300E7B715 /* WVC.swift in Sources */,
 				456F9612223539B400E7B715 /* Choose.swift in Sources */,
+				188128A7223604D100D22C11 /* Img.swift in Sources */,
 				456F960A2235355F00E7B715 /* WView.swift in Sources */,
 				456F95FF2235231300E7B715 /* layout.swift in Sources */,
 				456F95EB2234001600E7B715 /* WText.swift in Sources */,
