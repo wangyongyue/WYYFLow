@@ -16,7 +16,7 @@ class ChooseDetails: WDeaL {
         for i in 1...6{
             
             let m = ChooseDetaisModel()
-            m.name = "文身断发记录数\(i)"
+            m.name = "flow就是好用\(i)"
             arr.append(m)
         }
         

@@ -191,7 +191,6 @@
 				456F959E2233FC3300E7B715 /* AppDelegate.swift */,
 				456F95A02233FC3300E7B715 /* ViewController.swift */,
 				456F95D12233FE3D00E7B715 /* main */,
-				456F95D02233FE3900E7B715 /* OC */,
 				456F9605223534F800E7B715 /* component */,
 				456F95CF2233FE3600E7B715 /* base */,
 				456F95CE2233FE3400E7B715 /* images */,
@@ -238,13 +237,6 @@
 				456F95D82233FF3600E7B715 /* ui */,
 			);
 			path = base;
-			sourceTree = "<group>";
-		};
-		456F95D02233FE3900E7B715 /* OC */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = OC;
 			sourceTree = "<group>";
 		};
 		456F95D12233FE3D00E7B715 /* main */ = {

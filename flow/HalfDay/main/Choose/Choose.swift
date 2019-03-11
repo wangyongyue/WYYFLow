@@ -16,7 +16,7 @@ class Choose: WDeaL,WModelDelegate {
         for i in 1...6{
             
             let m = ChooseModel()
-            m.name = "文身断发记录数\(i)"
+            m.name = "flow就是好用\(i)"
             m.delegate = self
             arr.append(m)
         }

@@ -16,7 +16,7 @@ class Buy: WDeaL {
         for i in 1...2{
             
             let m = BuyModel()
-            m.name = "文身断发记录数"
+            m.name = "flow就是好用"
             arr.append(m)
         }
         

@@ -16,7 +16,7 @@ class Check: WDeaL {
         for i in 1...9{
             
             let m = CheckModel()
-            m.name = "文身断发记录数"
+            m.name = "flow就是好用"
             arr.append(m)
         }
         
