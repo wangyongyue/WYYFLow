@@ -25,5 +25,7 @@ class VM: NSObject {
     func callBack(_ ablock:@escaping DataCallBack){
         block = ablock
     }
-    
+    func reload(){
+        block?()
+    }
 }

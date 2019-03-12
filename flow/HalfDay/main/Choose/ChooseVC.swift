@@ -26,6 +26,8 @@ class ChooseVC: WVC {
 
         }
         v.table.register(ChooseCell.classForCoder())
+        v.table.register(BuyCell.classForCoder())
+
         v.table.didSelect { (index) in
             
             print(index)

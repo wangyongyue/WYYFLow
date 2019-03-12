@@ -10,7 +10,6 @@ import UIKit
 import SnapKit
 class ChooseCell: WCell {
 
-   
     var label = WLabel()
     var button = WButton.init("点击")
     var event:CGFunction?
@@ -18,8 +17,14 @@ class ChooseCell: WCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         self.contentView.addSubview(label)
-        label.frame = self.contentView.bounds
-        
+        label.numberOfLines = 0
+        label.snp.makeConstraints { (make) in
+            make.left.equalTo(12)
+            make.top.equalTo(12)
+            make.bottom.equalTo(-20)
+            make.width.equalTo(120)
+
+        }
         self.contentView.addSubview(button)
         button.snp.makeConstraints { (make) in
             make.right.equalTo(-12)
@@ -32,6 +37,10 @@ class ChooseCell: WCell {
         
     }
     
+    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+        
+       
+    }
    
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -42,13 +51,14 @@ class ChooseCell: WCell {
         if aModel is ChooseModel{
             let a = aModel as! ChooseModel
             label.text = a.name
+            
         }
     }
 
 }
 class ChooseModel:WModel{
     
-    var name:String?
+    @objc dynamic var name:String?
     override init() {
         super.init()
         self.blidView = "ChooseCell"

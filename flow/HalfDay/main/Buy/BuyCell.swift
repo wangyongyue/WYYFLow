@@ -14,7 +14,13 @@ class BuyCell: WCell {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         self.contentView.addSubview(label)
-        label.frame = self.contentView.bounds
+        label.snp.makeConstraints { (make) in
+            make.left.equalTo(12)
+            make.top.equalTo(12)
+            make.bottom.equalTo(-20)
+            make.width.equalTo(120)
+            
+        }
         label.textColor = UIColor.red
         
     }
